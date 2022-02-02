@@ -1,0 +1,35 @@
+
+.spotify-app{
+    background-color: #1E1E1E;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    color: #ffffff;
+    /* grid-auto-rows: minmax(100px, auto); */
+}
+
+.nav-nav{
+    grid-column: 2 / 8;
+    grid-row: 1/2;
+}
+.side-bar{
+    grid-column: 1 / 2;
+    grid-row: 1/11;
+    background-color: #000000;
+}
+.reproductor{
+    grid-column: 1 / 8;
+    grid-row: 11/13;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+}
+.dashboard{
+    grid-column: 2 / 8;
+    grid-row: 2/11;
+    /* border: 1px solid #fff; */
+    background-color: #181818;
+}
+.container{
+    padding: 15px;
+}

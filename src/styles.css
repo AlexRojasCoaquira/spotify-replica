@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0 ;
+
+}
+.p-1{
+    padding: 10px;
+}
+.border{
+    border: 1px solid #fff;
+}
+p,h3{
+    margin: 0;
+}
+.px-2{
+    padding: 0 5px;
+}
+
+.fxG{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.space-total{
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e10;
+  /* border: 3.5px solid transparent; */
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(206, 199, 199, 0.829);
+  height: 20px;
+  /* border: 1.8px solid rgba(109, 106, 106, 0.507); */
+  /* border-radius: 10px; */
+}

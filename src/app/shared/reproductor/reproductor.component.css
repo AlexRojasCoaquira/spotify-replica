@@ -1,0 +1,61 @@
+.player{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 100%;
+}
+.player-music{
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 10px;
+}
+.player-music-img{
+/*CODE*/
+}
+.player-music-name{
+    padding: 0 15px;
+}
+img{
+    height: 59px;
+}
+.player-audio{
+    grid-column: 3 / 6;
+    padding: 15px;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+.player-audio-button{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-tools{
+    grid-column: 6 / 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    /* padding: 10px; */
+    height: 100%;
+}
+.icon-player{
+    font-size: 1.5em;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.volume{
+    width: 100px;
+}
+@media  (max-width: 768px) {  
+    .player{
+        display: none;
+    }
+    .player-audio{
+        padding: 5px;
+    }
+}

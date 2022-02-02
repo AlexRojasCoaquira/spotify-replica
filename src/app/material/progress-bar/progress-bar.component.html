@@ -1,0 +1,7 @@
+<div class="progress-bar" (mouseup)="mouseUp($event)"(mousedown)="mouseDown($event)">
+    <div class="outer-progress-bar" [ngStyle]="{'max-width':widthProgressBar+'px'}" (mousemove)="moveMe($event)" >
+      <div class="inner-progress-bar" [ngStyle]="{'width':porcentaje+'%'}">
+        <!-- <span class="progress-bar-point"></span> -->
+      </div>
+    </div>
+  </div>

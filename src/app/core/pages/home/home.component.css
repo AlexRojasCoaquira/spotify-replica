@@ -1,0 +1,98 @@
+
+.spotify-app{
+    background-color: #1E1E1E;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    color: #ffffff;
+}
+.dashboard-spotify{
+    /* grid-column: 2 / 8;
+    grid-row: 1/11;
+    overflow-y: auto;
+    position: relative; */
+}
+.nav-bar{
+    /* background-color: #0000007a;
+    height: 10vh ;
+    position: fixed;
+    width: 100%;     */
+}
+.side-bar{
+    /* grid-column: 1 / 2;
+    grid-row: 1/11;
+    background-color: #000000; */
+}
+.reproductor{
+    /* grid-column: 1 / 8;
+    grid-row: 11/13;
+    background-color: #181818;
+    border-top: 1px solid #282828; */
+}
+/* .dashboard{
+    grid-column: 2 / 8;
+    grid-row: 2/11;
+    background-color: #181818;
+} */
+.container{
+    /* padding: 15px; */
+}
+/*RESPONSIVE*/
+@media  (max-width: 768px) {  
+    ::-webkit-scrollbar {display: none;}   
+    .dashboard-spotify{
+        grid-column: 1 / 8;
+        grid-row: 1/11;
+        overflow-y: auto;
+        
+        /* overflow-y: auto;
+        position: relative; */
+    }
+    .nav-bar{
+        display: none;
+        /* background-color: #0000007a;
+        height: 10vh ;
+        position: fixed;
+        width: 100%;     */
+    }
+    .side-bar{
+        grid-column: 1 / 8;
+        grid-row: 12/13;
+        background-color: #181818;
+    }
+    .reproductor{
+        grid-column: 1 / 8;
+        grid-row: 11/12;
+        background-color: #000000;
+        border-top: 1px solid #282828;
+    }
+}
+@media (min-width: 768px) { 
+    .dashboard-spotify{
+        grid-column: 2 / 8;
+        grid-row: 1/11;
+        overflow-y: auto;
+        box-sizing: content-box;
+        width: 100%;
+    }
+    .nav-bar{
+        background-color: #0000007a;
+        height: 10vh ;
+        position: fixed;
+        z-index: 10;
+        width: 100%;    
+    }
+    .side-bar{
+        grid-column: 1 / 2;
+        grid-row: 1/11;
+        background-color: #000000;
+        width: 100%;
+    }
+    .reproductor{
+        grid-column: 1 / 8;
+        grid-row: 11/13;
+        background-color: #181818;
+        border-top: 1px solid #282828;
+    }
+ }
