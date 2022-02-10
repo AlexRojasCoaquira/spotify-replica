@@ -1,14 +1,14 @@
 <div class="card-simple">
-    <div class="">
+    <div class="card-simple-container">
         <div class="image">
-            <img src="https://newjams-images.scdn.co/v3/release-radar/ab6761610000e5ebec1cd67f4c17468f335206eb/es-419/default" alt="">
+            <img [src]="music.images[0].url" alt="">
             <div class="hola">
                 <i class="fas fa-play"></i>
             </div>
         </div>
         <div class="description">
-            <p class="title">Titulo del card</p>
-            <p class="subtitle">titulo del card</p>
+            <p class="title">{{music.name.slice(0,20)}}</p>
+            <p class="subtitle">{{music.artists[0].name}}</p>
         </div>
     </div>
 </div>

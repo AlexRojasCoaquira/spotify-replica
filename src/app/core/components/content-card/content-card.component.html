@@ -1,13 +1,13 @@
 <div class="content-card">
     <div class="content-card-head">
-        <h3 class="title">Lo mas escuchado</h3>
+        <h3 class="title">{{title}}</h3>
         <span class="more">VER TODO</span>
     </div>
     <div class="content-card-simple">
+        <app-card-simple *ngFor="let item of newReleaseList" [music]="item"></app-card-simple>
+        <!-- <app-card-simple></app-card-simple>
         <app-card-simple></app-card-simple>
         <app-card-simple></app-card-simple>
-        <app-card-simple></app-card-simple>
-        <app-card-simple></app-card-simple>
-        <app-card-simple></app-card-simple>
+        <app-card-simple></app-card-simple> -->
     </div>
 </div>

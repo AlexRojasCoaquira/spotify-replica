@@ -1,0 +1,93 @@
+<div class="playlist">
+    <div class="playlist-head contentSpacing">
+        <div class="playlist-head-background"></div>
+        <div class="playlist-shadow-top"></div>
+        <div class="playlist-image">
+            <img [src]="playlist?playlist.images[0].url : ''" alt="asdasd">
+            <!-- <img [src]="https://thisis-images.scdn.co/37i9dQZF1DZ06evO00k7iE-large.jpg" alt=""> -->
+        </div>
+        <div class="playlist-detail">
+            <h2 class="playlist-detail-type">{{playlist.type}}</h2>
+            <span>
+                <h1>{{playlist.name}}</h1>
+            </span>
+            <h2 class="">
+                <p>{{playlist.description}}</p>
+            </h2>
+            <div class="info">
+                <!-- <div class="">
+                </div> -->
+                <span class="spotify span-text2 span-decorator">{{playlist.owner.display_name}}</span>
+                <span class="like span-text span-decorator"> • {{playlist.followers.total | number}} me gusta</span>
+                <span class="song span-text span-decorator"> • {{playlist.tracks.total}} canciones</span>
+            </div>
+        </div>
+    </div>
+    <div class="playlist-body">
+        <div class="playlist-shadow-bottom"></div>
+        <div class="player contentSpacing"></div>
+        <div class="content contentSpacing" style="min-height: 1000px;">
+            <div class="list">
+                <div class="list-head">
+                    <div class="head">
+                        <div class="fxG " aria-colindex="1">#</div>
+                        <div class="title-content" aria-colindex="2">
+                            <div class="title">
+                                <span class="span-text3">titulo</span>
+                            </div>
+                        </div>
+                        <div class="title-content" aria-colindex="3">
+                            <div class="title">
+                                <span class="span-text3">álbum</span>
+                            </div>
+                        </div>
+                        <div class="title-content" aria-colindex="4">
+                            <div class="title">
+                                <span class="span-text3">agregado el</span>
+                            </div>
+                        </div>
+                        <div class="title-content" aria-colindex="5">
+                            <div class="title">
+                                <span class="span-text3">titulo</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="list-body">
+                    <div class="body" *ngFor="let item of playlist.tracks.items;let i = index">
+                        <div class="fxG span-decorator player-spotify" aria-colindex="1">
+                            <!-- {{i+1}} -->
+                            <i class=" fas fa-play-circle" (click)="reproducir(item.track.id)" *ngIf="!isMusic;else raa"></i>
+                            <ng-template #raa>
+                                <i class=" fas fa-pause-circle" (click)="pause()" #raa></i>
+                            </ng-template>
+                            <!-- <div class="gaa">
+                            </div> -->
+                        </div>
+                       
+                        <div class="title-content" aria-colindex="2">
+                            <!-- <img src="https://i.scdn.co/image/ab67616d00004851f789b02ba6655a1f03d17b9f" alt=""> -->
+                            <img [src]="item.track.album.images[2].url" alt="">
+                            <div class="title">
+                                <div class="name span-text4">{{item.track.name}}</div>
+                                <span class="artist span-text">{{item.track.artists[0].name}}</span>
+                            </div>
+                        </div>
+                        <div class="title-content" aria-colindex="3">
+                                <span class="span-text">{{item.track.album.name}}</span>
+                        </div>
+                        <div class="title-content" aria-colindex="4">
+                                <span class="span-text">hace 10 horas</span>
+                        </div>
+                        <div class="title-content" aria-colindex="4">
+                            <!-- <iframe [src]="'spotify:playlist:37i9dQZF1DZ06evO00k7iE' | domseguro" width="300" height="80" frameborder="0" allowtransparency="true"  allow="encrypted-media"></iframe> -->
+                                <span class="time span-text">3:09</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

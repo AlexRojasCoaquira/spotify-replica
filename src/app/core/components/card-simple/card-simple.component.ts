@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-simple',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-simple.component.css']
 })
 export class CardSimpleComponent implements OnInit {
-
+  @Input() music!:any;
   constructor() { }
 
   ngOnInit(): void {

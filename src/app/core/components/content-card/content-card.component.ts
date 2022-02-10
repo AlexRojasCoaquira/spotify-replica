@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SpotifyService } from '../../services/spotify.service';
 
 @Component({
   selector: 'app-content-card',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-card.component.css']
 })
 export class ContentCardComponent implements OnInit {
-
-  constructor() { }
+  @Input() title:string='';
+  newReleaseList:any[]=[]
+  constructor(private spotifyService:SpotifyService) { }
 
   ngOnInit(): void {
+    this.spotifyService.getNewReleases()
+    .subscribe((resp:any)=>{
+      console.log(resp.albums.items)
+      this.newReleaseList=resp.albums.items;
+    })
   }
-
 }

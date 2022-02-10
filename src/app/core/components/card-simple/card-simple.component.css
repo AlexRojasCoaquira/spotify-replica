@@ -11,6 +11,16 @@
     position: relative;
     overflow: hidden;
 }
+.card-simple-container{
+    /* padding: 16px; */
+    height: 250px;
+    width: 170px;
+    /* margin: 10px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-items: center; */
+    /* align-items: center; */
+}
 .card-simple:hover .hola{
     transform: translate(0px,-8px);
     animation-duration: 0.7s;
@@ -32,6 +42,9 @@
 .title{
     font-size: 1.1em;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
 }
 .subtitle{
     margin-top: 5px;

@@ -1,6 +1,6 @@
 
 .spotify-app{
-    background-color: #1E1E1E;
+    background-color: #121212;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(7, 1fr);

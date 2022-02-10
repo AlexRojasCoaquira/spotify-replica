@@ -1,0 +1,10 @@
+<div class="music">
+    <app-content-card class="space-total" title="Busqueda reciente" ></app-content-card>
+    <div class="categories " >
+        <p class="category-title">Explorar Todo</p>
+        <div class="category-list">
+            <app-card-category *ngFor="let item of categoriesList" [category]="item" >
+            </app-card-category>
+        </div>
+    </div>
+</div>

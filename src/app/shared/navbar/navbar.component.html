@@ -2,6 +2,11 @@
     <div class="navbar-route">
         <i class="fas fa-chevron-circle-left"></i>
         <i class="fas fa-chevron-circle-right"></i>
+        <div class="search" *ngIf="router.url ==='/search'" >
+            <i class="fas fa-search icon-search" ></i>
+            <input type="text">
+            <i class="fas fa-times icon-search" ></i>
+        </div>
     </div>
     <div class="navbar-account">
         <div class="premium">

@@ -10,6 +10,10 @@ import { MusicComponent } from './pages/music/music.component';
 import { CardSimpleComponent } from './components/card-simple/card-simple.component';
 import { ContentCardComponent } from './components/content-card/content-card.component';
 import { SvgComponentComponent } from './components/svg-component/svg-component.component';
+import { SearchComponent } from './pages/search/search.component';
+import { CardCategoryComponent } from './components/card-category/card-category.component';
+import { PlaylistComponent } from './pages/playlist/playlist.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 
@@ -21,7 +25,11 @@ import { SvgComponentComponent } from './components/svg-component/svg-component.
     MusicComponent,
     CardSimpleComponent,
     ContentCardComponent,
-    SvgComponentComponent
+    SvgComponentComponent,
+    SearchComponent,
+    CardCategoryComponent,
+    PlaylistComponent,
+    DomseguroPipe
   ],
   imports: [
     CommonModule,

@@ -13,6 +13,9 @@
 .player-music-img{
 /*CODE*/
 }
+.player-audio-mobile{
+    display: none;
+}
 .player-music-name{
     padding: 0 15px;
 }

@@ -1,0 +1,226 @@
+.playlist{
+    height: 150vh;
+}
+/*HEAD*/
+.playlist-head{
+    height: 50vh;
+    max-height: 500px;
+    min-height: 340px;
+    position: relative;
+    display: flex;
+    /* align-self: flex-end; */
+    padding-bottom: 24px;
+    /* background-color: rgb(128, 136, 152);
+    background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%)} */
+}
+.playlist-head-background{
+    background-color: rgb(80, 224, 232);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.playlist-shadow-top{
+    background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4=");
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.playlist-image{
+    height: 232px;
+    min-width: 232px;
+    width: 232px;
+    position: relative;
+    align-self: flex-end;
+    margin-inline-end: 24px;
+}
+.playlist-detail{
+    justify-content: flex-end;
+    z-index: 0;
+    display: flex;
+    flex-flow: column;
+    flex:1;
+}
+.playlist-detail-type{
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.playlist-detail>span{
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    word-break: break-word;
+}
+.playlist-detail>span>h1{
+    padding: 0.08em 0px;
+    width: 100%;
+    font-size: 70px;
+    line-height: 96px; 
+    font-weight: 700;
+    letter-spacing: -.075em;
+    text-transform: none
+}
+.playlist-detail>h2>p{
+    color: rgba(255,255,255,.7);
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 8px;
+    align-items: center;
+}
+.playlist-detail>.info{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+.playlist-detail>.info>.spotify{
+    color: #fff;
+}
+.playlist-detail>.info>.like{
+    margin: 0px 4px;
+}
+/* .playlist-detail>.info>.son{
+    color: #fff;
+} */
+/*BODY*/
+.playlist-body{
+    isolation: isolate;
+    position: relative;
+}
+.playlist-shadow-bottom{
+    background-color: rgb(80, 224, 232);
+    background-image:linear-gradient(rgba(0,0,0,.6) 0,#121212 100%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4="); 
+    height: 232px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: -1;
+}
+.playlist-body>.player{
+    padding-top:24px ;
+    padding-bottom:24px;
+    position: relative;
+    height: 20px;
+}
+.playlist-body>.content>.list{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: 0;
+    height: 500px;
+    position: relative;
+}
+.playlist-body>.content>.list>.list-head{
+    height: 36px;
+    margin: 0 -32px 16px;
+    padding: 0 32px;
+    position: sticky;
+    /* border-bottom: 1px solid transparent; */
+    top: 64px;
+    z-index: 2;
+}
+.playlist-body>.content>.list>.list-head>.head{
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px,1fr);
+    display: grid;
+    gap: 16px;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    color: #b3b3b3;
+    height: 100%;
+}
+.playlist-body>.content>.list>.list-head>.head>.title-content{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+.playlist-body>.content>.list>.list-head>.head>.title-content>.title{
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    background-color: transparent;
+}
+.playlist-body>.list>.list-body{
+    contain: layout size;
+    position: relative;
+    height: 500px;
+}
+.playlist-body>.content>.list>.list-body>.body{
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px,1fr);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    height: 56px;
+    position: relative;
+    grid-gap: 16px;
+    display: grid;
+    padding: 0 16px;
+}
+.playlist-body>.content>.list>.list-body>.body:hover{
+    background-color: #5b636471;
+    border-radius: 5px;
+
+}
+.playlist-body>.content>.list>.list-body>.body>.title-content{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    color: #a7a7a7;
+}
+.playlist-body>.content>.list>.list-body>.body>.title-content>img{
+    margin-right: 16px;
+    background-color: #282828;
+    flex-shrink: 0;
+    object-position: center center;
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+}
+.playlist-body>.content>.list>.list-body>.body>.title-content>.title{
+    padding-right: 8px;
+    align-items: center;
+    column-gap: 8px;
+    display: grid;
+    grid-template:
+        "title title"
+        "badges subtitle"/auto 1fr;
+}
+.playlist-body>.content>.list>.list-body>.body>.title-content>.title>.name{
+    color: #fff;
+    grid-area: title;
+    justify-self: start;
+    white-space: unset;
+    word-break: break-all;
+}
+.playlist-body>.content>.list>.list-body>.body>.title-content>.title>.artist{
+    color: #a7a7a7;
+    grid-area: subtitle;
+    grid-column-start: badges;
+    word-break: break-all;
+}
+.time{
+    color: #a7a7a7;
+    display: flex;
+    font-variant-numeric: tabular-nums;
+    justify-content: flex-end;
+    width: 4ch;
+    margin-right: 16px;
+}
+.player-spotify{
+    background-color: none;
+    position:relative
+}
+.body:hover ,.player-spotify:hover{
+    /* background-color: #fff; */
+    /* z-index: ; */
+}
+.gaa{
+    position: absolute;
+}

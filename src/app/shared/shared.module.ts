@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ReproductorComponent } from './reproductor/reproductor.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MaterialModule } from '../material/material.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,16 +12,18 @@ import { MaterialModule } from '../material/material.module';
   declarations: [
     NavbarComponent,
     ReproductorComponent,
-    SidebarComponent
+    SidebarComponent,
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
   exports:[
     SidebarComponent,
     NavbarComponent,
     ReproductorComponent,
+
   ]
 })
 export class SharedModule { }

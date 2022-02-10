@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reproductor.component.css']
 })
 export class ReproductorComponent implements OnInit {
-   music=new Audio('../../../assets/sources/music.mp3');
+  //  music=new Audio('https://open.spotify.com/track/6EJiVf7U0p1BBfs0qqeb1f');
+   music=new Audio('https://p.scdn.co/mp3-preview/3906aa5012624d4e35c2108207745eb48f3bdf0f?cid=774b29d4f13844c495f206cafdad9c86');
     isMusic:boolean=false;
   constructor() { }
 

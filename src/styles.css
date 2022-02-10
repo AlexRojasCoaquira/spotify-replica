@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* *{
+  margin: 0;
+} */
 body{
     margin: 0 ;
-
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 .p-1{
     padding: 10px;
@@ -9,7 +12,7 @@ body{
 .border{
     border: 1px solid #fff;
 }
-p,h3{
+p,h3,h1,h2{
     margin: 0;
 }
 .px-2{
@@ -18,14 +21,19 @@ p,h3{
 
 .fxG{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
 .space-total{
   width: 100%;
 }
-
+img{
+  width: 100%;
+  height: 100%;
+}
+.contentSpacing{
+  padding: 0 32px;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -41,4 +49,51 @@ p,h3{
   height: 20px;
   /* border: 1.8px solid rgba(109, 106, 106, 0.507); */
   /* border-radius: 10px; */
+}
+/*ESTILOS DE SPOTIFY*/
+.span-text{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-transform: none;
+}
+.span-text2{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+}
+.span-text3{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.span-text4{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+.span-decorator{
+  color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+}
+.spacer-icon{
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    height: 40px;
+    padding: 0 16px;
+    color: #b3b3b3;
 }
